@@ -17,4 +17,4 @@ def test():
 		print('too many argument!')
 
 if __name__ =='__main__':
-test
+	test()
