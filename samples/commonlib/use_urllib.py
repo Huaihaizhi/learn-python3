@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
 from urllib import request,parse
+import urllib.request
 #get:
 with request.urlopen('https://api.douban.com/v2/book/2129650') as f:
 	data=f.read()
