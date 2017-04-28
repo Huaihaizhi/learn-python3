@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>Please Signin In</title>
+</head>
+<body>
+    {% if message %}
+    <p style="color:red">{{message}}</p>
+    {% endif %}
+    <form action="/signin" method="post">
+    	<legend>Please signin in:</legend>
+    	<p><input name="username" placeholder="Username" value="{{username}}"></p>
+    	<p><input name="password" placeholder="Password" style="password"></p>
+    	<p><button type=="subnit">Sigin In</button></p>
+    </form>
+</body>
+</html>
