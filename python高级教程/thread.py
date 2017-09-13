@@ -15,12 +15,12 @@ class myThread(threading.Thread):
 		print('退出线程：'+self.name)
 
 def print_time(threadName,delay,counter):
-		while counter:
-			if exitFlag:
-				threadName.exit()
-			time.sleep(delay)
-			print('%s:%s' % (threadName,time.ctime(time.time())))
-			counter-=1
+	while counter:
+		if exitFlag:
+			threadName.exit()
+		time.sleep(delay)
+		print('%s:%s' % (threadName,time.ctime(time.time())))
+		counter-=1
 
 #创建新线程
 thread1=myThread(1,'thread-1',1)
